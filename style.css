@@ -1,0 +1,172 @@
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section-tittle{
+    font-size: 24px;
+    margin-top: 3px;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    
+}
+.nav-links ul li a{
+    text-decoration: none;
+    font-size: 13px;
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+  
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: rgb(30, 90, 139);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.display-flex{
+    display: flex;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.half-width{
+    width: 50%;
+    padding-left: 5%;
+    padding-right: 1%;
+    
+}
+.font{
+    font-size: 30px;
+}
+.half-width img{
+    width: 50%;
+}
+.button-link{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    background-image: linear-gradient(#1cb367,rgba(44, 74, 172, 0.87));
+    padding: 10px 40px;
+    border-radius: 5px;
+    
+    
+    
+}
+.container{
+    width: 800px;
+    padding-left: 120px;
+    padding-right: 30px;
+    
+}
+#center{
+    text-align: center;
+    padding-left:150px;
+}
+
+
+.product .product-banner img{
+    width: 250px;
+    height: 150px;
+    position: relative;
+    padding: 10px 30px;
+}
+.collection{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-row-gap: 70px;
+    
+}
+.product-detail{
+    text-align: left;
+    padding-left: 30px;
+}
+.product-info{
+    padding-left: 30px;
+}
+.product-info{
+   display: flex;
+}
+.product-s{
+    font-size: 15px;
+}
+.fa-star.filled{
+    color: rgb(218, 199, 32);
+}
+.fa-star.empty{
+    color: gray;
+}
+.footer{
+    text-align: center;
+    padding-top: 20px;
+    background-color: black;
+}
+.color-white{
+    color: white;
+}
+
+.footer_icon{
+    display: inline;
+    color: white;
+  
+}
+.icon{
+    font-size: 40px;
+    padding:1%;
+    padding-bottom: 3%;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    
+nav{
+    display: flex;
+    
+    
+}
+.nav-item{
+    flex-direction: column;
+}
+.nav-links ul li{
+      list-style: none;
+      display: inline-block;
+      
+  }
+  
+.half-width img{
+    width: 100%;
+    height: 100%;
+}
+.collection{
+    display: grid;
+    
+}
+
+
+.display-flex{
+  display: flex;
+  width: 100%;
+} 
+.footer{
+    width: 100%;
+}
+    
+}
